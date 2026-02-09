@@ -11,7 +11,7 @@ test("Search products and export top results (JSON + CSV)", async ({ page }) => 
   await home.openProducts();
   await products.assertOnProductsPage();
 
-  await products.search("dress"); // try: "top", "tshirt", "jeans"
+  await products.search("dress"); // e.g., "top", "tshirt", "jeans"
   const results = await products.extractTopProducts(8);
 
   expect(results.length).toBeGreaterThan(0);
