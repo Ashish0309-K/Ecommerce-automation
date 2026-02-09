@@ -90,11 +90,3 @@ npx playwright show-report
 Ashish Kumar Singh
 
 ---
-
-If you want, next I can:
-
-* Make this **even shorter**
-* Convert this into **UI + API framework**
-* Rewrite this to **match a specific company JD**
-
-Just tell me 👍
