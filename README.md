@@ -1,6 +1,6 @@
 ---
 
-## Playwright E-Commerce Automation Assignment
+## Playwright E-Commerce Automation
 
 UI automation framework built using Playwright to validate core e-commerce workflows such as product search, cart validation, and data extraction.
 
@@ -82,11 +82,5 @@ npx playwright show-report
 * Tests are written using Page Object Model (POM)
 * No login is required for test execution
 * Site is a public demo application used for automation practice
-
----
-
-## Author
-
-Ashish Kumar Singh
 
 ---
