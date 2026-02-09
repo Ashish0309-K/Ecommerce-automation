@@ -1,200 +1,252 @@
-📌 Project Overview
+Got it 👍
+Below is a **clean, professional, recruiter-grade README**, enhanced with **raw symbols (ASCII / Unicode)** to visually structure sections and headings — **no emojis, no markdown clutter**, just strong visual hierarchy.
 
-This project is an end-to-end UI automation framework built using Playwright with JavaScript, focusing on real-world e-commerce user journeys such as product search, result validation, cart operations, and data extraction.
+You can copy-paste this directly as `README.md`.
 
-The framework follows industry best practices like Page Object Model (POM), reusable utilities, stable locators, and automated test evidence generation.
+---
 
-🔹 Designed to demonstrate practical automation skills required for QA / Automation / SDET roles.
+============================================================
+▶ PLAYWRIGHT E-COMMERCE AUTOMATION FRAMEWORK
+============================================
 
-🎯 Key Objectives
+---
 
-Automate critical e-commerce workflows
+1. PROJECT OVERVIEW
 
-Validate business logic (price consistency, cart totals)
+---
 
-Extract and export dynamic UI data
+This project is a **production-style end-to-end UI automation framework** developed using **Playwright with JavaScript**, targeting core **e-commerce workflows** such as product discovery, result validation, cart operations, and UI data extraction.
 
-Build maintainable and scalable test architecture
+The framework is designed following **industry-standard automation practices** including **Page Object Model (POM)**, reusable utilities, and automated test evidence capture.
 
-Generate debugging evidence for failed tests
+Purpose:
 
-🛠 Tech Stack
+* Demonstrate real-world automation skills
+* Showcase scalable framework design
+* Highlight validation of business logic, not just UI interactions
 
-Automation Tool: Playwright
+---
 
-Language: JavaScript (Node.js)
+2. KEY OBJECTIVES
 
-Test Runner: Playwright Test
+---
 
-Design Pattern: Page Object Model (POM)
+• Automate critical e-commerce user journeys
+• Validate product pricing and cart consistency
+• Extract dynamic UI data for reporting
+• Build maintainable and reusable test architecture
+• Enable effective debugging through test artifacts
 
-Reporting: Playwright HTML Report
+---
 
-Data Export: JSON & CSV
+3. TECHNOLOGY STACK
 
-CI Ready: Yes (GitHub Actions – can be added)
+---
 
-🌐 Application Under Test
+• Programming Language     : JavaScript (Node.js)
+• Automation Tool          : Playwright
+• Test Runner              : Playwright Test
+• Framework Design         : Page Object Model (POM)
+• Reporting                : Playwright HTML Report
+• Data Export              : JSON and CSV
+• CI Readiness             : GitHub Actions (future enhancement)
 
-AutomationExercise – E-Commerce Demo Site
+---
 
-URL: https://automationexercise.com
+4. APPLICATION UNDER TEST
 
-Chosen for its stability and automation-friendly design
+---
 
-Supports product search, cart operations, and validations
+AutomationExercise – E-Commerce Demo Platform
 
-📂 Project Structure
-playwright-ecommerce-automation/
-├─ src/
-│  ├─ pages/
-│  │  ├─ HomePage.js
-│  │  ├─ ProductsPage.js
-│  │  └─ CartPage.js
-│  └─ utils/
-│     ├─ fileWriter.js
-│     └─ priceUtils.js
-├─ tests/
-│  ├─ search-and-export.spec.js
-│  └─ cart-validation.spec.js
-├─ output/
-│  ├─ products.json
-│  └─ products.csv
-├─ playwright.config.js
-├─ package.json
-└─ README.md
+• URL        : [https://automationexercise.com](https://automationexercise.com)
+• Reason     : Stable UI, automation-friendly, realistic workflows
+• Coverage   : Product search, listing, cart, validation
 
-🧱 Framework Architecture
-✔ Page Object Model (POM)
+---
 
-UI locators and actions are separated from test logic
+5. PROJECT STRUCTURE
 
-Improves readability, maintainability, and reuse
+---
 
-✔ Utilities Layer
+playwright-ecommerce-automation
+│
+├── src
+│   ├── pages
+│   │   ├── HomePage.js
+│   │   ├── ProductsPage.js
+│   │   └── CartPage.js
+│   │
+│   └── utils
+│       ├── fileWriter.js
+│       └── priceUtils.js
+│
+├── tests
+│   ├── search-and-export.spec.js
+│   └── cart-validation.spec.js
+│
+├── output
+│   ├── products.json
+│   └── products.csv
+│
+├── playwright.config.js
+├── package.json
+└── README.md
 
-priceUtils.js → Parses and normalizes UI prices
+---
 
-fileWriter.js → Exports extracted data to JSON & CSV
+6. FRAMEWORK ARCHITECTURE
 
-✔ Test Layer
+---
 
-Clean, readable tests focused only on assertions and flows
+[ Page Object Model ]
+• All locators and UI actions are encapsulated inside page classes
+• Test files contain only business logic and assertions
+• Improves maintainability and reduces duplication
 
-No direct selectors inside test files
+[ Utility Layer ]
+• priceUtils.js     : Normalizes UI price values
+• fileWriter.js    : Handles JSON and CSV export logic
 
-🔍 Automated Test Scenarios
-🔎 Product Search & Data Export
+[ Test Layer ]
+• Focused, readable test cases
+• No direct selectors inside test files
 
-Navigate to Products page
+---
 
-Search product by keyword
+7. AUTOMATED TEST SCENARIOS
 
-Validate search results visibility
+---
 
-Extract top N products:
+[ Product Search & Data Export ]
+• Navigate to Products page
+• Search product by keyword
+• Validate search results visibility
+• Extract top N product details:
 
-Product Name
+* Product Name
+* Price
+* Product URL
+  • Export extracted data into JSON and CSV files
 
-Price
+[ Cart Validation ]
+• Add product to cart
+• Validate:
 
-Product URL
+* Product name consistency
+* Price consistency
+* Total amount calculation
+  • Remove item from cart (optional enhancement)
 
-Export extracted data to:
+---
 
-products.json
+8. TEST DATA OUTPUT
 
-products.csv
+---
 
-🛒 Cart Validation
+Sample JSON Output:
 
-Search product
+{
+"name": "Sleeveless Dress",
+"price": 1000,
+"priceText": "Rs. 1000",
+"url": "[https://automationexercise.com/product_details/1](https://automationexercise.com/product_details/1)"
+}
 
-Add product to cart
+---
 
-Validate:
+9. TEST EVIDENCE AND DEBUGGING
 
-Product name consistency
-
-Price consistency between listing and cart
-
-Total amount calculation
-
-Remove item from cart (optional enhancement)
-
-📁 Sample Exported Data (JSON)
-[
-  {
-    "name": "Sleeveless Dress",
-    "price": 1000,
-    "priceText": "Rs. 1000",
-    "url": "https://automationexercise.com/product_details/1"
-  }
-]
-
-📸 Test Evidence & Debugging
+---
 
 The framework automatically captures:
 
-📷 Screenshots (on failure)
+• Screenshot  : On test failure
+• Video       : On test failure
+• Trace       : On test failure
 
-🎥 Videos (on failure)
+These artifacts assist in:
+• Faster root-cause analysis
+• Better defect reproduction
+• Improved test reliability
 
-🧭 Traces (on failure)
+---
 
-These help in quick root-cause analysis and improve debugging efficiency.
+10. CONFIGURATION HIGHLIGHTS
 
-⚙️ Configuration Highlights
+---
 
-Parallel test execution
+• Parallel test execution
+• Retry mechanism for flaky tests
+• Headless execution by default
+• Centralized base URL management
 
-Retry logic for flaky tests
+---
 
-Headless execution by default
+11. EXECUTION INSTRUCTIONS
 
-Centralized base URL configuration
+---
 
-▶️ How to Run the Tests
-1️⃣ Install Dependencies
+Step 1 – Install dependencies
 npm install
 
-2️⃣ Install Playwright Browsers
+Step 2 – Install Playwright browsers
 npx playwright install
 
-3️⃣ Run Tests
+Step 3 – Execute tests
 npm test
 
-4️⃣ View HTML Report
+Step 4 – View test report
 npm run report
 
-📈 Resume Highlights (How to Mention)
+---
 
-Automated end-to-end e-commerce workflows using Playwright with JavaScript.
+12. RESUME HIGHLIGHTS
 
-Implemented Page Object Model for scalable and maintainable test architecture.
+---
 
-Validated pricing logic, cart consistency, and UI data accuracy.
+• Automated end-to-end e-commerce workflows using Playwright (JavaScript)
+• Implemented Page Object Model for scalable automation design
+• Validated pricing logic and cart consistency using UI data extraction
+• Exported dynamic UI data into structured JSON and CSV formats
+• Enabled test debugging using screenshots, videos, and trace viewer
 
-Extracted and exported dynamic UI data into JSON and CSV formats.
+---
 
-Enabled failure diagnostics using screenshots, videos, and trace viewer.
+13. FUTURE ENHANCEMENTS
 
-🚀 Future Enhancements
+---
 
-🔗 API + UI hybrid testing
+• API and UI hybrid testing
+• Allure reporting integration
+• CI pipeline using GitHub Actions
+• Test categorization (Smoke / Regression)
+• Multi-environment support
+• Accessibility validations
 
-📊 Allure reporting
+---
 
-🧪 Test tagging (Smoke / Regression)
+14. AUTHOR
 
-🔁 CI integration using GitHub Actions
-
-🌐 Environment support (QA / Prod)
-
-♿ Accessibility checks
-
-👤 Author
+---
 
 Ashish Kumar Singh
-Automation | QA | SDET Aspirant
-📍 Bengaluru, India
+Automation / QA / SDET Aspirant
+Bengaluru, India
+
+---
+
+15. FINAL NOTE
+
+---
+
+This project reflects **real-world automation engineering standards** and is suitable for **resume showcase, interviews, and enterprise-level discussions**.
+
+============================================================
+
+If you want next:
+• GitHub Actions CI file
+• Interview explanation script
+• Conversion into TestOps Framework (Project 1)
+
+Just tell me 🚀
