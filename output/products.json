@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Sleeveless Dress",
+    "price": 1000,
+    "priceText": "Rs. 1000",
+    "url": "https://automationexercise.com/product_details/3"
+  },
+  {
+    "name": "Stylish Dress",
+    "price": 1500,
+    "priceText": "Rs. 1500",
+    "url": "https://automationexercise.com/product_details/4"
+  },
+  {
+    "name": "Sleeves Top and Short - Blue & Pink",
+    "price": 478,
+    "priceText": "Rs. 478",
+    "url": "https://automationexercise.com/product_details/16"
+  },
+  {
+    "name": "Sleeveless Unicorn Patch Gown - Pink",
+    "price": 1050,
+    "priceText": "Rs. 1050",
+    "url": "https://automationexercise.com/product_details/19"
+  },
+  {
+    "name": "Cotton Mull Embroidered Dress",
+    "price": 1190,
+    "priceText": "Rs. 1190",
+    "url": "https://automationexercise.com/product_details/20"
+  },
+  {
+    "name": "Blue Cotton Indie Mickey Dress",
+    "price": 1530,
+    "priceText": "Rs. 1530",
+    "url": "https://automationexercise.com/product_details/21"
+  },
+  {
+    "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink",
+    "price": 1600,
+    "priceText": "Rs. 1600",
+    "url": "https://automationexercise.com/product_details/22"
+  },
+  {
+    "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi",
+    "price": 1100,
+    "priceText": "Rs. 1100",
+    "url": "https://automationexercise.com/product_details/23"
+  }
+]
