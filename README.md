@@ -77,6 +77,12 @@ npx playwright show-report
 
 ---
 
+## Reporting
+- HTML Report: `npx playwright show-report`
+- Traces: enabled on failure (open trace from report)
+
+---
+
 ## Notes
 
 * Tests are written using Page Object Model (POM)
