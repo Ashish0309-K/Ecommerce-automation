@@ -6,6 +6,14 @@ playwright-report/
 test-results/
 blob-report/
 trace.zip
+.playwright/
+
+# coverage
+coverage/
+
+# build output
+dist/
+build/
 
 # env files
 .env
@@ -22,5 +30,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# generated outputs (keep only if you want to commit them)
+# custom generated output
 output/
